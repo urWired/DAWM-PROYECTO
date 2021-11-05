@@ -6353,6 +6353,12 @@ button.close {
 .affix {
   position: fixed;
 }
+
+/* #logo{
+  max-width: 20%;
+  max-height: 60%;
+} */
+
 @-ms-viewport {
   width: device-width;
 }

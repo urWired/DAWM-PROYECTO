@@ -574,7 +574,7 @@ a,
 
 .btn-danger,
 .navbar .navbar-nav > li > a.btn-danger {
-  border-color: #e78b90;
+  border-color: #a786df;
   color: #e78b90;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle,
@@ -597,7 +597,7 @@ a,
 .btn-danger.btn-fill,
 .navbar .navbar-nav > li > a.btn-danger.btn-fill {
   color: #FFFFFF;
-  background-color: #e78b90;
+  background-color: #a786df;
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -1878,7 +1878,7 @@ a,
 }
 
 .card {
-  background: #fff;
+  background: #d9d4e7;
   box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23), 0 20px 25px 0px rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   margin-bottom: 30px;
