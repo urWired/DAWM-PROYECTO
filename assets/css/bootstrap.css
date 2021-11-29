@@ -1134,7 +1134,11 @@ img {
           transition: all .2s ease-in-out;
 }
 .img-circle {
-  border-radius: 50%;
+  border-radius: 0%;
+}
+.map-wrapper{
+  display: block;
+  align-items: center;
 }
 hr {
   margin-top: 20px;

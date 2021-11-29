@@ -342,19 +342,13 @@ body > .navbar-collapse a {
 }
 
 .avatar {
-  border: 3px solid #c5a47e;
-  border-radius: 50%;
   overflow: hidden;
-  max-width: 110px;
+  max-width: 145px;
   margin: 0 auto;
 }
 .avatar img {
   width: 100%;
   height: auto;
-}
-
-.avatar-danger {
-  border-color: #e78b90;
 }
 
 *::selection {
@@ -1940,7 +1934,7 @@ a,
   color: #333333;
 }
 .card .description {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .card-member {
