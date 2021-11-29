@@ -1138,7 +1138,7 @@ img {
 }
 .map-wrapper{
   display: block;
-  align-items: center;
+  text-align: center;
 }
 hr {
   margin-top: 20px;
