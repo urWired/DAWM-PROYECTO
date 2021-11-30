@@ -34,6 +34,7 @@
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="https://unpkg.com/intro.js/minified/introjs.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,11 +58,11 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase" id="menuoptions">
                     <li>
-                        <a href="freebie.html" class="btn btn-danger btn-fill">Inicio</a>
+                        <a href="freebie.html" class="btn btn-danger btn-fill" data-intro='Aquí te mostraremos nuestra historia'>¿Quiénes Somos?</a>
                     </li>
                     <li>
                         <a href="equipoDesarrollo.html" 
-                        class="btn btn-danger btn-fill" target="_self">Equipo de Desarrollo</a>
+                        class="btn btn-danger btn-fill" target="_self" data-intro='Aquí conocerás a todo el Equipo que hizo la pagina posible'>Equipo de Desarrollo</a>
                     </li>
                     <li class="dropdown">
                         <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
@@ -75,7 +76,7 @@
                                 <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                                <a href="https://www.instagram.com/asvolh/"><i class="fa fa-instagram"></i> Instagram</a>
                             </li>
                         </ul>
                     </li>
@@ -121,7 +122,7 @@
             <div class="row">
                 <div class="title-area">
                     <h5 class="subtitle text-gray">Te presentamos</h5>
-                <h2>Nuestros Programas y Servicios</h2>
+                <h2 data-intro='Aquí verás lo que realizamos y servicios que brindamos'>Nuestros Programas y Servicios</h2>
                     <div class="separator separator-danger">✻</div>
                     <p class="description">We promise you a new look and more importantly, a new attitude. We build that by getting to know you, your needs and creating the best looking clothes.</p>
                 </div>
@@ -159,7 +160,7 @@
     </div>
 
     <!--  -->
-    <div class="section section-small section-get-started">
+    <div class="section section-small section-get-started" >
         <div class="parallax filter">
             <div class="image"
                 style="background-image: url('assets/img/portada2.jpg')">
@@ -173,7 +174,8 @@
                 </div>
 
                 <div class="button-get-started">
-                    <a href="#gaia" class="btn btn-danger btn-fill btn-lg" id="registro">Registro</a>
+                    <a href="#gaia" class="btn btn-danger btn-fill btn-lg" id="registro"
+                    data-intro='Si quieres ser parte de nuestro equipo, registrate en el boton de este apartado :)'>Registro</a>
                 </div>
             </div>
         </div>
@@ -185,11 +187,11 @@
         <div class="parallax filter filter-color-black">
             <div class="image" style="background-image:url('assets/img/portada3.jpg')">
             </div>
-            <div class="container">
+            <div class="container" >
                 <div class="content">
                     <div class="row">
                         <div class="title-area">
-                            <h2>Conoce a Nuestros Benefactores</h2>
+                            <h2 data-intro='Conoce a quienes tambien realizan una misma labor que nosotros'>Conoce a Nuestros Benefactores</h2>
                             <div class="separator separator-danger">✻</div>
                             <p class="description">Porque una mano amiga nunca está de más</p>
                         </div>
@@ -302,7 +304,7 @@
                 <div class="col-md-6 col-sm-6" id="contacto">
                     <div class="contacto">
                         <h5 class="title"> Contacto</h5>
-                        <form>
+                        <form data-intro='Si quieres contactarte con nosotros, déjanos tus datos'>
                             <div class="row">
                                 <div class="col-md-8">
                                     <h5 class="title"> Nombres</h5>
@@ -341,32 +343,47 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-3">
+                <div class="col-md-3 col-sm-3" data-intro='O si quieres visitarnos, nuestra ubicación'>
                     <div class="info">
                         <h5 class="title">Ubicación</h5>
                         <div class="map-wrapper">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.94060773161!2d-79.88726828584899!3d-2.1762605378567574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dcf65a1abf7%3A0xc220653932f0e1f0!2sFundacion%20ASVOLH!5e0!3m2!1ses-419!2sec!4v1638223473207!5m2!1ses-419!2sec" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.94060773161!2d-79.88726828584899!3d-2.1762605378567574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dcf65a1abf7%3A0xc220653932f0e1f0!2sFundacion%20ASVOLH!5e0!3m2!1ses-419!2sec!4v1638223473207!5m2!1ses-419!2sec" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
+                    <div class="info">
+                        <h4 class="title">Dirección:</h4>
+                        <h5>Cdla. Atarazana, Av. Dr. Roberto Gilbert y Democracia</h5>
+                    </div>
                 </div>
-                <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="col-md-2 col-md-offset-1 col-sm-3" data-intro='Aquí encontrarás todas nuestras redes sociales'>
                     <div class="info">
                         <h5 class="title">Follow us on</h5>
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#" class="btn btn-social btn-facebook btn-simple">
+                                    <a href="https://www.facebook.com/asvolh.org.ec/" class="btn btn-social btn-facebook btn-simple">
                                         <i class="fa fa-facebook-square"></i> Facebook
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn btn-social btn-twitter btn-simple">
-                                        <i class="fa fa-twitter"></i> Twitter
+                                    <a href="#" class="btn btn-social btn-reddit btn-simple">
+                                        <i class="fa fa-whatsapp"></i> WhatsApp
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn btn-social btn-reddit btn-simple">
-                                        <i class="fa fa-whatsapp"></i> Whatspp
+                                    <a href="https://www.instagram.com/asvolh/" class="btn btn-social btn-reddit btn-simple">
+                                        <i class="fa fa-instagram"></i> Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-social btn-reddit btn-simple">
+                                        <i class="fa fa-phone"></i> +593 (4) 2287957  
+                                    </a>
+                                                                     
+                                </li>
+                                <li>
+                                    <a class="btn btn-social btn-reddit btn-simple">
+                                        <i class="fa fa-phone"></i> +593 (4) 2396869
                                     </a>
                                 </li>
                             </ul>
@@ -381,6 +398,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+    <script>
+        introJs().start();
+    </script>
 </body>
 
 <!--   core js files    -->
