@@ -3751,3 +3751,16 @@ body {
     padding: 0;
   }
 }
+
+.img-programas {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  
+}
+
+.img-programas:hover{
+  box-shadow: 0 0 2px 1px rgba(226, 37, 147, 0.822);
+
+}
