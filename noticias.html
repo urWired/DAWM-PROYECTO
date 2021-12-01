@@ -104,71 +104,105 @@
     <footer class="footer footer-big footer-color-black" data-color="black">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-3">
-                    <div class="info">
-                        <h5 class="title">Company</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a></li>
-                                <li>
-                                    <a href="#">Find offers</a>
-                                </li>
-                                <li>
-                                    <a href="#">Discover Projects</a>
-                                </li>
-                                <li>
-                                    <a href="#">Our Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="#">About Us</a>
-                                </li>
-                            </ul>
-                        </nav>
+<!--                <div class="col-md-2 col-sm-3">-->
+<!--                    <div class="info">-->
+<!--                        <h5 class="title">Company</h5>-->
+<!--                        <nav>-->
+<!--                            <ul>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Home</a></li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Find offers</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Discover Projects</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Our Portfolio</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">About Us</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </nav>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-md-offset-1 col-sm-3">-->
+<!--                    <div class="info">-->
+<!--                        <h5 class="title"> Help and Support</h5>-->
+<!--                         <nav>-->
+<!--                            <ul>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Contact Us</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">How it works</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Terms &amp; Conditions</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Company Policy</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Money Back</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </nav>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="col-md-6 col-sm-6" id="contacto">
+                    <div class="contacto">
+                        <h5 class="title"> Contacto</h5>
+                        <form data-intro='Si quieres contactarte con nosotros, déjanos tus datos'>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h5 class="title"> Nombres</h5>
+                                  <input type="text" class="form-control" placeholder="Nombre completo" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="title"> Fecha nacimiento</h5>
+                                    <input type="date" class="form-control" placeholder="Fecha de nacimiento" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="inputState">Ciudad</label>
+                              <select id="inputState" class="form-control" required>
+                                  <option selected>Seleccionar...</option>
+                                  <option selected>Otro...</option>
+                                  <option>Daule</option>
+                                  <option>Guayaquil</option>
+                                  <option>Milagro</option>
+                                  <option>Portoviejo</option>
+                                  <option>Quito</option>
+                              </select>
+                            </div>
+
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico" required>
+<!--                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Detalles</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-3">
+
+                <div class="col-md-3 col-sm-3" data-intro='O si quieres visitarnos, nuestra ubicación'>
                     <div class="info">
-                        <h5 class="title"> Help and Support</h5>
-                         <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">How it works</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms &amp; Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="#">Company Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Money Back</a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <h5 class="title">Ubicación</h5>
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.94060773161!2d-79.88726828584899!3d-2.1762605378567574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dcf65a1abf7%3A0xc220653932f0e1f0!2sFundacion%20ASVOLH!5e0!3m2!1ses-419!2sec!4v1638223473207!5m2!1ses-419!2sec" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
                     <div class="info">
-                        <h5 class="title">Latest News</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i> <b>Get Shit Done</b> The best kit in the market is here, just give it a try and let us...
-                                        <hr class="hr-small">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i> We've just been featured on <b> Awwwards Website</b>! Thank you everybody for...
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <h4 class="title">Dirección:</h4>
+                        <h5>Cdla. Atarazana, Av. Dr. Roberto Gilbert y Democracia</h5>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-offset-1 col-sm-3">
@@ -182,7 +216,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn btn-social btn-reddit btn-simple">
+                                    <a href="https://api.whatsapp.com/send?phone=593985117228&app=facebook&entry_point=page_cta" class="btn btn-social btn-reddit btn-simple">
                                         <i class="fa fa-whatsapp"></i> WhatsApp
                                     </a>
                                 </li>

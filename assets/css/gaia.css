@@ -2522,6 +2522,9 @@ a,
 .section-our-team-freebie .title-header {
   text-transform: none;
 }
+footer .info {
+  text-align: left;
+}
 .section-get-started .button-contact,
 .section-header-freebie .button-contact,
 .section-our-team-freebie .button-contact {
@@ -2957,7 +2960,7 @@ a,
     margin-top: 25px;
   }
   footer .row .info ul {
-    text-align: center;
+    text-align: left;
   }
   footer .row div:first-child .title {
     margin-top: 0;
