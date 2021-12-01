@@ -1,0 +1,22 @@
+{
+    "noticias":[
+        {
+            "id": "news1",
+            "titulo": "Primera Colecta", 
+            "fecha": "4 octubre, 2018",
+            "contenido": "Con la motivación de ayudar a los pacientes más desprotegidos y a las personas de escasos recursos, ASVOLH realizó el 26 de septiembre del 2018 su primera colecta a favor de los más necesitados. Te compartimos algunas fotos de esta linda experiencia."
+        },
+        {
+            "id": "news2",
+            "titulo": "Semana de la Lactancia Materna",
+            "fecha": "2 agosto, 2018",
+            "contenido": "Con éxito se realizó la Semana de la lactancia materna, organizado por el Hospital «Dr. Roberto Gilbert Elizalde»,  el Hospital de la Mujer «Alfredo Paulson» , en el cual se capacitó a las usuarias, pacientes y familiares de estos hospitales, sobre la importancia de la lactancia en los niños."
+        },
+        {
+            "id": "news3",
+            "titulo": "Capacitación en Estimulación Temprana",
+            "fecha": "13 agosto, 2018",
+            "contenido": "Nuestras voluntarias de Estimulación Temprana recibieron una Capacitación práctica de «Masajes Básicos, recomendaciones y prevención en estimulación temprana» dictada en el Hospital Roberto Gilbert por la Lcda. Alicia Rodríguez de Gymboree."
+        }
+    ]
+}
