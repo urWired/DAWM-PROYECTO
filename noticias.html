@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/logo.png">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>ASVOLH | Equipo de Desarrollo</title>
+    <title>ASVOLH | Noticias</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/gaia.css" rel="stylesheet"/>
@@ -60,68 +60,42 @@
             </div>
             <div class="section section-our-clients-freebie">
                 <div class="container">
-                    <div class="title-area">
-                        <h2>Equipo de Desarrollo</h2>
+                    <div class="news-title">
+                        <h2>Noticias</h2>
                         <div class="separator separator-danger">∎</div>
+                    <div class="news-search">
+                        <input type="search" id="search-input" class="search-input" placeholder="Ingrese una búsqueda..." aria-label="Search"
+                            aria-describedby="search-addon" />
                     </div>
-        
-                    <ul class="nav nav-text" role="tablist">
-                        <li class="active">
-                            <a href="#testimonial1" role="tab" data-toggle="tab">
-                                <div class="image-clients">
-                                    <img alt="..." class="img-circle" src="assets/img/faces/face_5.jpg"/>
-                                    <h4 id="equipodesarrollo">David Garcia</h4>
+                    <div class="news-container">
+                        <div class="col">
+                            <div class="news-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Primera Colecta</h5>
+                                    <p class="card-date">4 octubre, 2018</p>
+                                    <p class="card-text">Con la motivación de ayudar a los pacientes más desprotegidos y a las personas de escasos recursos, ASVOLH realizó el 26 de septiembre del 2018 su primera colecta a favor de los más necesitados. Te compartimos algunas fotos de esta linda experiencia.</p>
                                 </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#testimonial2" role="tab" data-toggle="tab">
-                                <div class="image-clients">
-                                    <img alt="..." class="img-circle" src="assets/img/faces/face_6.jpg"/>
-                                    <h4 id="equipodesarrollo">Omar Coello</h4>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="news-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Semana de la Lactancia Materna</h5>
+                                    <p class="card-date">2 agosto, 2018</p>
+                                    <p class="card-text">Con éxito se realizó la Semana de la lactancia materna, organizado por el Hospital «Dr. Roberto Gilbert Elizalde»,  el Hospital de la Mujer «Alfredo Paulson» , en el cual se capacitó a las usuarias, pacientes y familiares de estos hospitales, sobre la importancia de la lactancia en los niños.</p>
                                 </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#testimonial3" role="tab" data-toggle="tab">
-                                <div class="image-clients">
-                                    <img alt="..." class="img-circle" src="assets/img/faces/marco.jpg"/>
-                                    <h4 id="equipodesarrollo">Marco Del Rosario</h4>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="news-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Capacitación en Estimulación Temprana</h5>
+                                    <p class="card-date">13 agosto, 2018</p>
+                                    <p class="card-text">Nuestras voluntarias de Estimulación Temprana recibieron una Capacitación práctica de «Masajes Básicos, recomendaciones y prevención en estimulación temprana» dictada en el Hospital Roberto Gilbert por la Lcda. Alicia Rodríguez de Gymboree.</p>
                                 </div>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#testimonial4" role="tab" data-toggle="tab">
-                                <div class="image-clients">
-                                    <img alt="..." class="img-circle" src="assets/img/faces/noelia.jpg"/>
-                                    <h4 id="equipodesarrollo">Noelia Intriago</h4>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-        
-        
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="testimonial1">
-                            <p class="description" id="presentacion">
-                                And I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. Now there is only one important color... Green I even had the pink polo I thought I was Kanye I promise I will never let the people down. I want a better life for all!
-                            </p>
+                            </div>
                         </div>
-                        <div class="tab-pane" id="testimonial2">
-                            <p class="description" id="presentacion">Green I even had the pink polo I thought I was Kanye I promise I will never let the people down. I want a better life for all! And I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. Now there is only one important color...
-                            </p>
-                        </div>
-                        <div class="tab-pane" id="testimonial3">
-                            <p class="description" id="presentacion">soy la ostia</p>
-                        </div>
-                        <div class="tab-pane" id="testimonial4">
-                            <p class="description" id="presentacion"> I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. The 'Gaia' team did a great work while we were collaborating. They provided a vision that was in deep connection with our needs and helped us achieve our goals.
-                            </p>
-                        </div>
-        
                     </div>
-        
                 </div>
             </div>
         </div>
@@ -252,4 +226,7 @@
 
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="assets/js/gaia.js"></script>
+
+<!-- js para búsqueda de noticias -->
+<script type="text/javascript" src="assets/js/noticias.js"></script>
 </html>
