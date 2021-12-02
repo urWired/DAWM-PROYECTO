@@ -972,6 +972,7 @@ a,
   padding: 0 15px;
   text-align: center;
 }
+
 .news-container {
   display: flex;
   flex-direction: row;
@@ -980,7 +981,7 @@ a,
   justify-content: space-evenly;
 }
 .news-card{
-  background-color: rgb(155, 113, 141);
+  background-color: #fec7d7;
   width: 350px;
   height: auto;
   border-radius: 5px;
@@ -998,11 +999,12 @@ a,
   text-decoration: underline;
 }
 .card-date{
-  color: rgb(46, 44, 44);
+  color: rgb(41, 39, 39);
   font-weight: bold;
 }
 .card-text{
   font-size: 16px;
+  color: #333;
 }
 .section .title-area .description {
   font-size: 16px;
