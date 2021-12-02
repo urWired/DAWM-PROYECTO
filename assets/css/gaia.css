@@ -1368,7 +1368,7 @@ a,
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .navbar-default .navbar-nav > li > a:not(.btn) {
-  color: #000000;
+  color: white;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -2894,7 +2894,7 @@ footer .info {
   }
 
   .navbar-transparent {
-    background-color: transparent;
+    background-color: #e7e7e7;
   }
 
   .wrapper {
