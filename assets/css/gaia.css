@@ -3820,3 +3820,157 @@ body {
   box-shadow: 0 0 2px 1px rgba(226, 37, 147, 0.822);
 
 }
+
+.uk-section-default {
+  background: #fff;
+}
+
+.uk-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flow-root;
+  box-sizing: border-box; 
+}
+
+elemento {
+
+}
+.uk-section > :last-child {
+
+    margin-bottom: 0;
+
+}
+
+.uk-container-large {
+  max-width: 1360px;
+}
+.uk-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flow-root;
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uk-grid {
+  margin-left: -40px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.uk-container > :last-child {
+  margin-bottom: 0;
+}
+
+* + .uk-margin-medium {
+  margin-top: 40px !important;
+}
+
+.tm-grid-expand > * {
+  flex-grow: 1;
+}
+
+.uk-flex-middle {
+  align-items: center;
+}
+
+.uk-width-1-2\@m {
+  width: 50%;
+}
+
+[class*="uk-width"] {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+.uk-grid > * {
+  padding-left: 40px;
+}
+
+.uk-grid > * > :last-child {
+  margin-bottom: 0;
+}
+
+.uk-panel {
+  display: flow-root;
+  position: relative;
+  box-sizing: border-box;
+}
+
+[class*="uk-width"] {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+.uk-position-relative {
+  position: relative !important;
+}
+
+.uk-slideshow-items {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+}
+
+.uk-slideshow-items > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  will-change: transform,opacity;
+  touch-action: pan-y;
+}
+
+.uk-cover {
+  max-width: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.tm-grid-expand > * {
+  flex-grow: 1;
+}
+
+.uk-flex-middle {
+  align-items: center;
+}
+
+.uk-width-1-2\@m {
+  width: 50%;
+}
+
+[class*="uk-width"] {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+.uk-grid-item-match, .uk-grid-match > * {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.uk-grid > * {
+  padding-left: 40px;
+}
+
+.uk-grid > * {
+  margin: 0;
+}
+
+.uk-text-justify {
+  text-align: justify !important;
+}
