@@ -831,6 +831,9 @@ p > input, p > #inputState {
   border-radius: 5px;
   margin-top: 5px;
 }
+#container-contacto {
+  text-align: left;
+}
 input.invalid, select.invalid {
   background-color: #ffdddd;
 }
