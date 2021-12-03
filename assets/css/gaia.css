@@ -3936,3 +3936,47 @@ body {
 .rosado{
   color: #fec7d7;
 }
+
+.margin-bottom-x-2 {
+  margin-bottom: 50px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-great {
+  font-size: 34px;
+  line-height: 34px;
+}
+
+@media screen and (min-width: 1400px){
+  .container-dc {width: 98%; max-width: 1200px; margin: 0 auto;}
+}
+
+.text-small.text-small-separate {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.dc-li {
+  padding-left: 15px;
+  position: relative;
+}
+
+.dc-li::before {
+
+  content: "";
+  background: #0092dd;
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+}
+
+li{
+  list-style-type: none;
+}
