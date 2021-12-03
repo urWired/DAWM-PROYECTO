@@ -981,6 +981,7 @@ a,
   justify-content: space-evenly;
 }
 div .col{
+  display: inline;
   width: 350px;
   margin: 0;
 }
