@@ -3859,3 +3859,63 @@ body {
 
 }
 
+.fila {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbnail-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-full {
+  width: 100%;
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-dc-70 {
+  min-height: 70vh;
+}
+
+.section-dc-40 {
+  min-height: 40vh;
+}
+
+.col-dc-4 {
+  width: 50%;
+  padding: 1.25em;
+}
+
+.back-rosado{
+  background: #fec7d7;
+}
+
+.back-blanco{
+  background: white;
+}
+
+.text-title {
+  font-size: 43px;
+  line-height: 43px;
+  margin: 45px 0;
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.blanco{
+  color: white;
+}
+
+.rosado{
+  color: #fec7d7;
+}
