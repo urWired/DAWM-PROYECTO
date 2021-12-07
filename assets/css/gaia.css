@@ -219,7 +219,9 @@ a:hover {
   right: 0;
   bottom: -10px;
 }
-
+.section-comites{
+  background-color: #fcd6d6 !important;
+}
 .separator {
   color: #c5a47e;
   margin: 0 auto 20px;
@@ -248,9 +250,9 @@ a:hover {
   border-color: #e78b90;
 }
 
-p.description {
-  font-size: 16px;
-  color: #777777;
+div.info-icon > p.description {
+  font-size: 15px;
+  color: #0c0c0c;
 }
 
 a:hover, a:focus {
@@ -3870,9 +3872,9 @@ body {
   width: 300px; 
   border-radius: 10px;
 }
-.img-comites:hover{
+.row>.comites:hover{
   box-shadow: 0 0 2px 1px rgba(226, 37, 147, 0.822);
-
+  background-color: white;
 }
 
 .img-programas {
