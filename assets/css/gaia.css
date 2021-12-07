@@ -3967,7 +3967,7 @@ body {
 .dc-li::before {
 
   content: "";
-  background: #0092dd;
+  background: #fec7d7;
   position: absolute;
   left: -10px;
   top: 10px;
