@@ -958,6 +958,7 @@ p > input::placeholder, p > #inputState, p > #form_fecha::placeholder{
 }
 
 .section {
+  margin: 10px 0 25px 0;
   padding: 0.2% 0;
   position: relative;
   background-color: #FFFFFF;
@@ -3861,6 +3862,17 @@ body {
   .section-pricing .row [class^="col-"] {
     padding: 0;
   }
+}
+
+.img-comites {
+  border-radius: 4px;
+  padding: 10px;
+  width: 300px; 
+  border-radius: 10px;
+}
+.img-comites:hover{
+  box-shadow: 0 0 2px 1px rgba(226, 37, 147, 0.822);
+
 }
 
 .img-programas {
