@@ -1206,7 +1206,7 @@ div .card-body{
   background: #50236F;
 }
 .filter.filter-color-red:before {
-  background: #de6168;
+  background: #623232;
 }
 .filter.filter-gradient-black:before {
   background: #1f1c2c;
@@ -2089,7 +2089,7 @@ div .card-body{
   vertical-align: center;
   line-height: 1.7;
   position: relative;
-  top: 44%;
+  top: 73vh;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2892,9 +2892,7 @@ footer .info {
   .section-header .parallax:after, .section-header .static-image:after {
     height: 80vh;
   }
-  .section-header .content {
-    top: 50%;
-  }
+
   .section-header .content h1, .section-header .content h5, .section-header .content p {
     margin: 0;
   }
