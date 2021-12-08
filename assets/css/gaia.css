@@ -3967,7 +3967,7 @@ body {
 }
 
 .text-small.text-small-separate {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
 }
 
@@ -3991,4 +3991,38 @@ body {
 
 li{
   list-style-type: none;
+}
+
+.back-rosa{
+  background-color: #fec7d7;
+}
+
+.col-dc-20 {
+  width: 14%;
+  padding: 1.25em;
+}
+
+.margin-bottom-x-1-2 {
+  margin-bottom: 12.5px;
+}
+
+.row-dc {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-dc {
+  width: 98%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-full {
+  width: 100%;
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
