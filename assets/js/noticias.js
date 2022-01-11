@@ -1,5 +1,5 @@
 const peticion = () => {
-  fetch("assets/data/noticias.json")
+  fetch("/assets/data/noticias.json")
   .then(response => response.json())
   .then(data => {
     let noticias = data.noticias;

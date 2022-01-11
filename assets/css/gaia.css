@@ -1644,11 +1644,8 @@ div .card-body{
 }
 .footer .title {
   color: #777777;
-}
-.footer .title {
-  text-align: left;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
 }
 .footer .btn-social {
@@ -2583,7 +2580,7 @@ div .card-body{
   text-transform: none;
 }
 footer .info {
-  text-align: left;
+  text-align: center;
 }
 .section-get-started .button-contact,
 .section-header-freebie .button-contact,
