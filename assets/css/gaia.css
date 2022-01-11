@@ -141,6 +141,8 @@ a,
 .td-name,
 td,
 small,
+.li-objetivos,
+.li-valores,
 .media h5,
 .subtitle {
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -218,6 +220,20 @@ a:hover {
   content: "\201D";
   right: 0;
   bottom: -10px;
+}
+.section-quienessomos, .section-comites{
+  background-color: #fcd6d6 !important;
+}
+.li-objetivos{
+  text-align: left;
+  padding: 5px;
+  font-size: 16px;
+  list-style-type: circle;
+}
+.li-valores{
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
 }
 .section-comites{
   background-color: #fcd6d6 !important;
@@ -1010,9 +1026,8 @@ form label {
 }
 .section .title-area {
   max-width: 760px;
-  margin: 0 auto 70px;
+  margin: 10px auto 35px;
   display: block;
-  padding: 0 15px;
   text-align: center;
 }
 .news-title, .news-search {
@@ -2581,6 +2596,10 @@ div .card-body{
 }
 footer .info {
   text-align: center;
+  padding: 10px;
+}
+.footer-big nav > ul li {
+  text-align: center;
 }
 .section-get-started .button-contact,
 .section-header-freebie .button-contact,
@@ -2700,6 +2719,9 @@ footer .info {
 
 #menuoptions{
   font-size: 20px;
+}
+#menuoptions > li > a{
+  color: #000000;
 }
 
 #equipodesarrollo, #presentacion{
