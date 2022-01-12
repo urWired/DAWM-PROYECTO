@@ -234,6 +234,10 @@ a:hover {
   list-style-position: outside;
   padding-left: 0em;
 }
+#send-button{
+  background-color: black;
+  color: white;
+}
 .li-valores{
   list-style: none;
   text-align: center;
