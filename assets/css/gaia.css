@@ -225,12 +225,17 @@ a:hover {
   background-color: #fcd6d6 !important;
 }
 .li-objetivos{
-  text-align: left;
+  text-align: justify;
   padding: 5px;
   font-size: 16px;
   list-style-type: circle;
 }
+.valores > ul {
+  list-style-position: outside;
+  padding-left: 0em;
+}
 .li-valores{
+  list-style: none;
   text-align: center;
   padding: 5px;
   font-size: 16px;
