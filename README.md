@@ -25,7 +25,7 @@ Para configurar la base de datos relacional:
 ```
 sequelize init
 ```
-Cambie las credenciales de config.json por las de su motor de MySQL Workbench
+Cambie las credenciales de config.json por las de su motor de MySQL Workbench.<br>
 Ejecute el siguiente comando:
 ```
 npm install --save cors
