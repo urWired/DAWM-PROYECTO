@@ -20,7 +20,10 @@ const contact_stepper = () => {
 
     boton.onclick = function nextTab() {
         var x = document.getElementsByClassName("tab");
-        if(currentTab == 0 && !validateForm()) return false;
+        if(currentTab == 0 && !validateForm()){
+            alert("Hay campos incompletos en el formulario!")
+            return false;
+        } 
 
         x[currentTab].style.display = "none";
         currentTab = currentTab + 1;

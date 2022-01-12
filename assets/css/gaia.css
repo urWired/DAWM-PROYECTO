@@ -221,6 +221,10 @@ a:hover {
   right: 0;
   bottom: -10px;
 }
+div > p[class="description"] {
+  text-align: justify;
+  color: black;
+}
 .section-quienessomos, .section-comites{
   background-color: #fcd6d6 !important;
 }
