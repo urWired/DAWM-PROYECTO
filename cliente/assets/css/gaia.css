@@ -225,14 +225,35 @@ div > p[class="description"] {
   text-align: justify;
   color: black;
 }
-.section-quienessomos, .section-comites{
+.vision{
+  background-color: #fec7d7;
+  max-width: 100%;
+}
+.mision{
+  background-color: #fa9cb6;
+  height: 234px;
+}
+.mision > div > h2, 
+.mision > div > p[class="description"],
+.vision > div > h2,
+.vision > div > p[class="description"],
+.section-valores > div > div > div > h2
+ {
+  color: white !important;
+}
+.section-objetivos > div > div > div > h2 {
+  color: #fec7d7
+}
+.section-comites, .section-valores > .container{
   background-color: #fcd6d6 !important;
+  padding-bottom: 30px;
 }
 .li-objetivos{
   text-align: justify;
   padding: 5px;
   font-size: 16px;
   list-style-type: circle;
+  color: #fec7d7
 }
 .valores > ul {
   list-style-position: outside;
@@ -245,11 +266,10 @@ div > p[class="description"] {
 .li-valores{
   list-style: none;
   text-align: center;
-  padding: 5px;
+  padding: 30px;
   font-size: 16px;
-}
-.section-comites{
-  background-color: #fcd6d6 !important;
+  display: inline;
+  color: white;
 }
 .separator {
   color: #c5a47e;
