@@ -29,7 +29,15 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "src/assets/js/bootstrap.js",
+              "src/assets/js/gaia.js",
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/modernizr.js",
+              "src/assets/js/noticias.js",
+              "src/assets/js/stepper.js"  
+            ]
           },
           "configurations": {
             "production": {
