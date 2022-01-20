@@ -17,7 +17,7 @@
     <!--     Fonts and icons     -->
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="/asvolhClient/src/assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
     <link href="https://unpkg.com/intro.js/minified/introjs.min.css" rel="stylesheet">
 </head>
 
@@ -36,7 +36,7 @@
                 <!-- <div class="image"
                 style="background-image: url('assets/img/logo.png')">
                 </div> -->
-                <a href="freebie.html" class="navbar-brand">
+                <a routerLink="/" class="navbar-brand">
                     ASVOLH
                 </a>
             </div>
@@ -44,18 +44,17 @@
 
                 <ul class="nav navbar-nav navbar-right navbar-uppercase" id="menuoptions">
                     <li>
-                        <a href="quienessomos.html"
-                        class="btn btn-danger btn-fill">¿Quiénes Somos?</a>
-                    </li>
+                       <a routerLink="/quienessomos" class="btn btn-danger btn-fill" data-intro='Conoce más sobre nosotros'>¿Quiénes Somos?</a>
+                   </li>
                     <li>
-                        <a href="equipoDesarrollo.html"
-                        class="btn btn-danger btn-fill" target="_self">Equipo de Desarrollo</a>
-                    </li>
-                    <li>
-                        <a href="noticias.html"
-                        class="btn btn-danger btn-fill" target="_self">Noticias</a>
-                    </li>
-                </ul>
+                       <a routerLink="/equipo" 
+                       class="btn btn-danger btn-fill" target="_self" data-intro='Conoce al equipo de desarrollo web'>Equipo de Desarrollo</a>
+                   </li>
+                   <li>
+                       <a routerLink="/noticias"
+                       class="btn btn-danger btn-fill" target="_self" data-intro='Revisa nuestras últimas noticias' id="options">Noticias</a>
+                   </li>
+               </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
