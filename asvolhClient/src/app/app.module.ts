@@ -3,10 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+/*Agregando componentes creados*/
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { EquipoDesarrolloComponent } from './equipo-desarrollo/equipo-desarrollo.component';
+import { RegistroVoluntariadoComponent } from './registro-voluntariado/registro-voluntariado.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,9 @@ import { InicioComponent } from './inicio/inicio.component';
     QuienesSomosComponent,
     NoticiasComponent,
     LoginComponent,
-    InicioComponent
+    InicioComponent,
+    EquipoDesarrolloComponent,
+    RegistroVoluntariadoComponent
   ],
   imports: [
     BrowserModule,
