@@ -1,11 +1,14 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('donantes', {
+    await queryInterface.createTable('voluntarios', {
       cedula: {
         type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true
+      },
+      referencia: {
+        type: Sequelize.STRING
       },
       nombres: {
         type: Sequelize.STRING,
@@ -23,30 +26,28 @@ module.exports = {
           key: 'id'
         }
       },
-      correo: {
-        type: Sequelize.STRING
+      id_voluntariado: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'voluntariados',
+          key: 'id'
+        }
       },
       fecha_nacimiento: {
         type: Sequelize.DATE,
         allowNull: false
       },
-      direccion: {
+      fecha_ingreso: {
+        type: Sequelize.DATE,
+        allowNull: false
+      },
+      motivo_ingreso: {
         type: Sequelize.STRING
-      },
-      tipo_donante: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model: 'tipoDonantes',
-          key: 'id'
-        }
-      },
-      contacto: {
-        type: Sequelize.INTEGER
       }
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('donantes');
+    await queryInterface.dropTable('voluntarios');
   }
 };

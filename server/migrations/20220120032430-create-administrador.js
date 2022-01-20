@@ -9,21 +9,20 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       usuario: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       contrasenia: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       tipo_usuario: {
-        type: Sequelize.INTEGER
-      },
-      createdAt: {
+        type: Sequelize.INTEGER,
         allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
+        references: {
+          model: 'tipoUsuarios',
+          key: 'id'
+        }
       }
     });
   },
