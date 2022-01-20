@@ -27,6 +27,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('administradors');
+    await queryInterface.dropTable('administradores');
   }
 };
