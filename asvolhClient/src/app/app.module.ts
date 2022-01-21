@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { EquipoDesarrolloComponent } from './equipo-desarrollo/equipo-desarrollo.component';
 import { RegistroVoluntariadoComponent } from './registro-voluntariado/registro-voluntariado.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegistroVoluntariadoComponent } from './registro-voluntariado/registro-
     LoginComponent,
     InicioComponent,
     EquipoDesarrolloComponent,
-    RegistroVoluntariadoComponent
+    RegistroVoluntariadoComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
