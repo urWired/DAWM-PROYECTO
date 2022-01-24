@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   voluntario.init({
-    cedula: DataTypes.INTEGER,
+    cedula: DataTypes.STRING,
     referencia: DataTypes.STRING,
     nombres: DataTypes.STRING,
     apellidos: DataTypes.STRING,

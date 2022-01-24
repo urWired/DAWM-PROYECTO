@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   donante.init({
-    cedula: DataTypes.INTEGER,
+    cedula: DataTypes.STRING,
     nombres: DataTypes.STRING,
     apellidos: DataTypes.STRING,
     tipo_usuario: DataTypes.INTEGER,
