@@ -11,6 +11,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { EquipoDesarrolloComponent } from './equipo-desarrollo/equipo-desarrollo.component';
 import { RegistroVoluntariadoComponent } from './registro-voluntariado/registro-voluntariado.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DonacionComponent } from './donacion/donacion.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     InicioComponent,
     EquipoDesarrolloComponent,
     RegistroVoluntariadoComponent,
-    NavbarComponent
+    NavbarComponent,
+    DonacionComponent
   ],
   imports: [
     BrowserModule,
