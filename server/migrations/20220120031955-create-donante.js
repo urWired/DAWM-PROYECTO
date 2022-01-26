@@ -42,7 +42,7 @@ module.exports = {
         }
       },
       contacto: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       }
     });
   },

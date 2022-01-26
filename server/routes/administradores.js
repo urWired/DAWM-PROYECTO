@@ -4,9 +4,11 @@ var router = express.Router();
 const Sequelize = require('sequelize');
 const Administrador = require('../models').administrador;
 
-router.get('/', (req, res, next) => {
+router.get('/:usuario', (req, res, next) => {
+   const admin = req.params.usuario;
     Administrador.findAll({ 
-       attributes: { include: ["usuario"] }
+       attributes: { exclude: ["id", "createdAt", "updatedAt", "tipoUsuarioId"] },
+       where: {"usuario": admin}
      })
      .then(admins => {
         res.send(admins)
