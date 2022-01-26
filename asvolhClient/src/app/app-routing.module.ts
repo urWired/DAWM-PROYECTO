@@ -6,6 +6,7 @@ import { NoticiasComponent } from './noticias/noticias.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { RegistroVoluntariadoComponent } from './registro-voluntariado/registro-voluntariado.component';
 import { DonacionComponent } from './donacion/donacion.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: 'noticias', component: NoticiasComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'equipo', component: EquipoDesarrolloComponent},
   { path: 'quienessomos', component: QuienesSomosComponent},
   { path: 'registros', component: RegistroVoluntariadoComponent},
-  { path: 'donacion', component: DonacionComponent}
+  { path: 'donacion', component: DonacionComponent},
+  { path: 'login', component: LoginComponent}
 ];
 
 @NgModule({
