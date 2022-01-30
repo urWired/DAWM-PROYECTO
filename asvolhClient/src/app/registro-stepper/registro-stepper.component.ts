@@ -17,10 +17,11 @@ export class RegistroStepperComponent implements OnInit {
       cedula: ["", Validators.required],
       nombres: ["", Validators.required],
       apellidos: ["", Validators.required],
-      fechaNacimiento: ["", Validators.required]
+      fechaNacimiento: ["", Validators.required],
+      direccion: ["", Validators.required]
     });
     this.ingresoFormGroup = this.fb.group({
-      direccion: ["", Validators.required],
+      voluntariado: ["", Validators.required],
       motivo: [""]
     });
   }

@@ -14,6 +14,8 @@ import { RegistroVoluntariadoComponent } from './registro-voluntariado/registro-
 import { NavbarComponent } from './navbar/navbar.component';
 import { DonacionComponent } from './donacion/donacion.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 import { MatStepperModule} from '@angular/material/stepper';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -44,7 +46,9 @@ import { RegistroStepperComponent } from './registro-stepper/registro-stepper.co
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

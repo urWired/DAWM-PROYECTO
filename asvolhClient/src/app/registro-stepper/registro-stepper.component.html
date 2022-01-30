@@ -5,15 +5,20 @@
             <mat-form-field>
                 <input matInput placeholder="Cédula" formControlName="cedula" required>
             </mat-form-field>
-            <br>
             <mat-form-field>
                 <input matInput placeholder="Nombres" formControlName="nombres" required>
             </mat-form-field>
             <mat-form-field>
                 <input matInput placeholder="Apellidos" formControlName="apellidos" required>
             </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Fecha de Nacimiento</mat-label>
+                <input placeholder="dd/mm/yyyy" matInput [matDatepicker]="picker" formControlName="fechaNacimiento">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="Fecha de Nacimiento" formControlName="fechaNacimiento" required>
+                <input matInput placeholder="Dirección" formControlName="direccion" required>
             </mat-form-field>
             <div>
                 <button type="button" mat-button matStepperNext>Siguiente</button>
@@ -24,9 +29,8 @@
         <form [formGroup]="ingresoFormGroup">
             <ng-template matStepLabel="Address">Contacto</ng-template>
             <mat-form-field>
-                <input matInput placeholder="Dirección" formControlName="direccion" required>
+                <input matInput placeholder="Voluntariado" formControlName="voluntariado" required>
             </mat-form-field>
-            <br>
             <mat-form-field>
                 <textarea matInput placeholder="Motivo de ingreso" formControlName="motivo"></textarea>
             </mat-form-field>
