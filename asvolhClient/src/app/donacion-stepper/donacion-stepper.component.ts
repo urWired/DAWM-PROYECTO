@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-stepper',
-  templateUrl: './stepper.component.html',
-  styleUrls: ['./stepper.component.css']
+  selector: 'app-donacion-stepper',
+  templateUrl: './donacion-stepper.component.html',
+  styleUrls: ['./donacion-stepper.component.css']
 })
-export class StepperComponent implements OnInit {
+export class DonacionStepperComponent implements OnInit {
 
   profileFormGroup: FormGroup;
   addressFormGroup: FormGroup;

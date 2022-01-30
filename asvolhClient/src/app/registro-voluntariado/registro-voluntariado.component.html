@@ -25,61 +25,11 @@
         <div class="parallax filter filter-color-black">
             <div class="image" style="background-image:url('assets/img/voluntariado.jpg');">
             </div>
-            <div class="section section-our-clients-freebie">
+            <div class="section ">
                 <div class="container">
-                    <div class="col-md-12 col-sm-6" id="contacto">
-                        <div class="contacto">
-                            <h2 class="form-title">Contáctanos</h2>
-                            <form id="contact-form" action="">
-                                <div class="all-steps" id="all-steps">
-                                    <div class="step"></div>
-                                    <div class="step"></div>
-                                </div>
-                                <div id="contact-tab" class="tab">
-                                    <div class="row">
-                                        <div class="col">
-                                            <label for="form-nombres">Nombres</label>
-                                            <p><input id="form-nombres" placeholder="Ingrese sus nombres..." required></p>
-                                        </div>
-                                        <div class="col">
-                                            <label for="form-apellidos">Apellidos</label>
-                                            <p><input id="form-apellidos" placeholder="Ingrese sus apellidos..." required></p>                                    </div>
-                                        <div class="col">
-                                            <label for="form-fecha">Fecha de nacimiento</label>
-                                            <p><input id="form-fecha" type="date" placeholder="Fecha de nacimiento" required></p>
-                                        </div>
-                                        <div class="col">
-                                            <label for="inputState">Ciudad</label>
-                                            <p><select id="inputState" style="width:100%; height: 40px;" required>
-                                                <option value ="" disabled selected>Seleccionar...</option>
-                                                <option value ="Otro">Otro</option>
-                                                <option value ="Daule">Daule</option>
-                                                <option value ="Guayaquil">Guayaquil</option>
-                                                <option value ="Milagro">Milagro</option>
-                                                <option value ="Portoviejo">Portoviejo</option>
-                                                <option value ="Quito">Quito</option>
-                                            </select></p>
-                                        </div>
-                                        <div class="col">
-                                            <label for="exampleInputEmail1">Email</label>
-                                            <p><input type="email" id="exampleInputEmail1" placeholder="Correo electrónico" required></p>
-                                        </div>
-                                        <div class="col">
-                                            <label for="exampleFormControlTextarea1">Detalles</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                                        </div>
-                                        <button id="send-button" type="button" class="btn btn-primary">Enviar</button>
-                                    </div>
-                                </div>
-                                <div id="thanks-tab"  class="tab">
-                                    <div class="thanks-message text-center" id="text-message">
-                                        <img src="assets/img/check.png" width="100" class="mb-4">
-                                        <h3>Gracias por contactarnos!</h3>
-                                        <span>Un miembro de nuestra organización se pondrá en contacto contigo.</span>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                    <div class="col-md-12 col-sm-6">
+                        <h2>Forma parte de nuestro equipo</h2>
+                        <app-registro-stepper></app-registro-stepper>
                     </div>
                 </div>
             </div>

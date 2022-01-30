@@ -16,9 +16,10 @@ import { DonacionComponent } from './donacion/donacion.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatStepperModule} from '@angular/material/stepper';
 import { MatFormFieldModule} from '@angular/material/form-field';
-import { StepperComponent } from './stepper/stepper.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { DonacionStepperComponent } from './donacion-stepper/donacion-stepper.component';
+import { RegistroStepperComponent } from './registro-stepper/registro-stepper.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MatButtonModule } from '@angular/material/button';
     RegistroVoluntariadoComponent,
     NavbarComponent,
     DonacionComponent,
-    StepperComponent
+    DonacionStepperComponent,
+    RegistroStepperComponent
   ],
   imports: [
     BrowserModule,
