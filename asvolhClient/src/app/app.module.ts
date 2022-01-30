@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /*Agregando componentes creados*/
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { NoticiasComponent } from './noticias/noticias.component';
@@ -12,6 +13,12 @@ import { EquipoDesarrolloComponent } from './equipo-desarrollo/equipo-desarrollo
 import { RegistroVoluntariadoComponent } from './registro-voluntariado/registro-voluntariado.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DonacionComponent } from './donacion/donacion.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatStepperModule} from '@angular/material/stepper';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { StepperComponent } from './stepper/stepper.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -23,11 +30,19 @@ import { DonacionComponent } from './donacion/donacion.component';
     EquipoDesarrolloComponent,
     RegistroVoluntariadoComponent,
     NavbarComponent,
-    DonacionComponent
+    DonacionComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

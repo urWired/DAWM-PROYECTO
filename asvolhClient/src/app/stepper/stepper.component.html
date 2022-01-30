@@ -1,0 +1,30 @@
+<mat-vertical-stepper>
+    <mat-step [stepControl]="profileFormGroup">
+        <form [formGroup]="profileFormGroup">
+            <ng-template matStepLabel="Profile">Profile</ng-template>
+            <mat-form-field>
+                <input matInput placeholder="Name" formControlName="name" required>
+            </mat-form-field>
+            <div>
+                <button type="button" mat-button matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="addressFormGroup">
+        <form [formGroup]="addressFormGroup">
+            <ng-template matStepLabel="Address">Address</ng-template>
+            <mat-form-field>
+                <input matInput placeholder="Address" formControlName="address" required>
+            </mat-form-field>
+            <div>
+                <button type="button" mat-button matStepperPrevious>Previous</button>
+                <button type="button" mat-button matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step label="Done">
+        <ng-template matStepLabel="Done">Done</ng-template>
+        <p>This is final step</p>
+        <button mat-button matStepperPrevious>Previous</button>
+    </mat-step>
+</mat-vertical-stepper>

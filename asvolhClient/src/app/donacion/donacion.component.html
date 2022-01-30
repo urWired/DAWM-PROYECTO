@@ -8,8 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>ASVOLH | Equipo de Desarrollo</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <link href="/asvolhClient/src/assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="/asvolhClient/src/assets/css/gaia.css" rel="stylesheet"/>
 
     <!--     Fonts and icons     -->
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
@@ -20,7 +18,6 @@
 <body>
     <app-navbar></app-navbar>
     <!-- </nav> -->
-
     <div class="section section-our-team-freebie">
         <div class="parallax filter filter-color-black">
             <div class="image" style="background-image:url('assets/img/voluntariado.jpg');">
@@ -28,7 +25,9 @@
             <div class="section section-our-clients-freebie">
                 <div class="container">
                     <div class="col-md-12 col-sm-6" id="contacto">
-                        <div class="contacto">
+                        <app-stepper></app-stepper>
+                        <!-- <div class="contacto">
+                            
                             <h2 class="form-title">Realiza tu donación</h2>
                             <form id="contact-form" action="">
                                 <div class="all-steps" id="all-steps">
@@ -79,7 +78,7 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
