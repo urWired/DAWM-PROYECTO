@@ -2,13 +2,13 @@
     <mat-step [stepControl]="datosPersonalesFormGroup">
         <form [formGroup]="datosPersonalesFormGroup">
             <ng-template matStepLabel="DatosPersonales">Datos Personales</ng-template>
-            <mat-form-field>
+            <mat-form-field appearance="fill">
                 <input matInput placeholder="Cédula" formControlName="cedula" required>
             </mat-form-field>
-            <mat-form-field>
+            <mat-form-field appearance="fill">
                 <input matInput placeholder="Nombres" formControlName="nombres" required>
             </mat-form-field>
-            <mat-form-field>
+            <mat-form-field appearance="fill">
                 <input matInput placeholder="Apellidos" formControlName="apellidos" required>
             </mat-form-field>
             <mat-form-field appearance="fill">
@@ -17,7 +17,7 @@
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
               </mat-form-field>
-            <mat-form-field>
+            <mat-form-field appearance="fill">
                 <input matInput placeholder="Dirección" formControlName="direccion" required>
             </mat-form-field>
             <div>
@@ -28,10 +28,15 @@
     <mat-step [stepControl]="ingresoFormGroup">
         <form [formGroup]="ingresoFormGroup">
             <ng-template matStepLabel="Address">Contacto</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Voluntariado" formControlName="voluntariado" required>
+            <mat-form-field appearance="fill">
+                <mat-label>Voluntariado</mat-label>
+                <mat-select [(ngModel)]="selectedValue" formControlName="voluntariado">
+                  <mat-option *ngFor="let voluntariado of voluntariados" [value]="voluntariado.value">
+                    {{voluntariado.viewValue}}
+                  </mat-option>
+                </mat-select>
             </mat-form-field>
-            <mat-form-field>
+            <mat-form-field appearance="fill">
                 <textarea matInput placeholder="Motivo de ingreso" formControlName="motivo"></textarea>
             </mat-form-field>
             <div>
