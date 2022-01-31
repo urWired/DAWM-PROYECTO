@@ -2,3 +2,23 @@
     font-size: 40px;
     color: white;
 }
+.card-title {
+    color: #000000;
+    font-size: 20px;
+}
+.card-title:hover {
+    text-decoration: underline;
+}
+.card-date {
+    color: rgb(41, 39, 39);
+    font-weight: bold;
+}
+.news-search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#search-button {
+    border-radius: 5px;
+    width: 100px;
+}

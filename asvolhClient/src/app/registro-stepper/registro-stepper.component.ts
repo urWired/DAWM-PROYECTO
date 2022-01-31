@@ -45,4 +45,16 @@ export class RegistroStepperComponent implements OnInit {
     });
   }
 
+  form_datos() {
+    console.log(this.datosPersonalesFormGroup.value);
+  }
+
+  form_contacto() {
+    console.log(this.contactoFormGroup.value);
+  }
+
+  form_voluntariado() {
+    console.log(this.ingresoFormGroup.value);
+  }
+
 }

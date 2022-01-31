@@ -1,6 +1,6 @@
 <mat-vertical-stepper>
     <mat-step [stepControl]="datosPersonalesFormGroup">
-        <form [formGroup]="datosPersonalesFormGroup">
+        <form [formGroup]="datosPersonalesFormGroup" (ngSubmit)="form_datos()" #formpersonal="ngForm">
             <ng-template matStepLabel="DatosPersonales">Datos Personales</ng-template>
             <mat-form-field appearance="fill">
                 <input matInput placeholder="Cédula" formControlName="cedula" required>
@@ -23,7 +23,7 @@
         </form>
     </mat-step>
     <mat-step [stepControl]="contactoFormGroup">
-        <form [formGroup]="contactoFormGroup">
+        <form [formGroup]="contactoFormGroup" (ngSubmit)="form_contacto()" #formcontacto="ngForm">
             <ng-template matStepLabel="DatosContacto">Datos de contacto</ng-template>
             <mat-form-field appearance="fill">
                 <input matInput placeholder="Correo personal" formControlName="correo" required>
@@ -41,7 +41,7 @@
         </form>
     </mat-step>
     <mat-step [stepControl]="ingresoFormGroup">
-        <form [formGroup]="ingresoFormGroup">
+        <form [formGroup]="ingresoFormGroup" (ngSubmit)="form_voluntariado()" #formvoluntariado="ngForm">
             <ng-template matStepLabel="Ingreso">Ingreso</ng-template>
             <mat-form-field appearance="fill">
                 <mat-label>Voluntariado</mat-label>
@@ -63,6 +63,6 @@
     <mat-step label="Done">
         <ng-template matStepLabel="Done">Envío de datos</ng-template>
         <p>Haz click en el botón para finalizar el proceso de registro</p>
-        <button mat-button type="submit">Enviar</button>
+        <button mat-button type="submit" (click)="formpersonal.ngSubmit.emit();formcontacto.ngSubmit.emit();formvoluntariado.ngSubmit.emit()">Enviar</button>
     </mat-step>
 </mat-vertical-stepper>

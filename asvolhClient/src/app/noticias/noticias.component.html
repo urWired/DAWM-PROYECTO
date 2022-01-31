@@ -33,9 +33,19 @@
                     <div class="news-search">
                         <input type="search" id="search-input" class="search-input" placeholder="Ingrese una búsqueda..." aria-label="Search"
                             aria-describedby="search-addon" />
+                        <button id="search-button">Buscar</button>
                     </div>
                     <div id="news-container" class="row row-cols-1 row-cols-md-3 g-4 mx-2 my-2">
-
+                        <div class="col" *ngFor="let noticia of noticias">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{noticia.titulo}}</h5>
+                                    <h5 clas="card-date">{{noticia.fecha | date: 'yyyy-MM-dd'}}</h5>
+                                    <div class="separator separator-danger">∎</div>
+                                    <p class="card-text">{{noticia.contenido}}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

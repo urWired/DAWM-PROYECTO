@@ -16,8 +16,8 @@ module.exports = (sequelize, DataTypes) => {
   noticia.init({
     titulo: DataTypes.STRING,
     fecha_publicacion: DataTypes.DATE,
-    contenido: DataTypes.STRING,
-    id_creador: DataTypes.INTEGER
+    contenido: DataTypes.TEXT("long"),
+    id_creador: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'noticia',

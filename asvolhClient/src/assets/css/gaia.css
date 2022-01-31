@@ -2702,7 +2702,7 @@ footer .info {
 .search-input{
   display: inline-block;
   border-radius: 10px;
-  width: 100%;
+  width: 500px;
   height: 35px;
   border: none;
   color: #000000;
@@ -2747,10 +2747,6 @@ footer .info {
 .section-our-team-freebie .container {
   margin-top: 14vh;
   margin-bottom: 50px;
-}
-
-.card p {
-  min-height: 0;
 }
 
 .section-our-clients-freebie .list-logos img {

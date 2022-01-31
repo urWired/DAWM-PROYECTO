@@ -10,7 +10,7 @@ const Noticia = require('../models').noticia;
 /* GET ALL */
 router.get('/', (req, res, next) => {
     Noticia.findAll({ 
-       attributes: { },
+       attributes: { exclude: ["createdAt", "updatedAt", "administradorId"] }
     })
     .then(noticias => {
         res.send(noticias)
