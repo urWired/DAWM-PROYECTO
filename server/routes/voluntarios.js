@@ -7,7 +7,6 @@ const Voluntario = require('../models').voluntario;
 
 /* CREATE */
 
-c
 
 /* GET BY ID_VOLUNTARIADO */
 router.get('/:voluntariado', (req, res, next) => {
