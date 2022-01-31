@@ -1,20 +1,27 @@
 <mat-vertical-stepper>
     <mat-step [stepControl]="profileFormGroup">
         <form [formGroup]="profileFormGroup">
-            <ng-template matStepLabel="Profile">Profile</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Name" formControlName="name" required>
+            <ng-template matStepLabel="Profile">Datos Personales</ng-template>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Cédula o RUC" formControlName="cedula" required>
+            </mat-form-field><br>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Nombres Completos" formControlName="nombres" required>
             </mat-form-field>
             <div>
-                <button type="button" mat-button matStepperNext>Next</button>
+                <button type="button" mat-button matStepperNext>Siguiente</button>
             </div>
         </form>
     </mat-step>
-    <mat-step [stepControl]="addressFormGroup">
-        <form [formGroup]="addressFormGroup">
-            <ng-template matStepLabel="Address">Address</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Address" formControlName="address" required>
+    <mat-step [stepControl]="contactoFormGroup">
+        <form [formGroup]="contactoFormGroup">
+            <ng-template matStepLabel="Address">Datos de Contacto</ng-template>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="N° de telefono o celular" formControlName="celular" required>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Correo electrónico" formControlName="correo" required>
             </mat-form-field>
             <div>
                 <button type="button" mat-button matStepperPrevious>Previous</button>
@@ -22,9 +29,52 @@
             </div>
         </form>
     </mat-step>
-    <mat-step label="Done">
+
+    <mat-step [stepControl]="donacionFormGroup">
+        <form [formGroup]="donacionFormGroup">
+            <ng-template matStepLabel="donacion">Donación</ng-template>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Forma de Pago</mat-label>
+                <mat-select [(ngModel)]="selectedValue" formControlName="tipo_pago">
+                  <mat-option *ngFor="let tipopago of tipo_pago" [value]="tipopago.value">
+                    {{tipopago.viewValue}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="N° cuenta" formControlName="cuenta" required>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Monto a donar" formControlName="monto" required>
+            </mat-form-field>
+            <div>
+                <button type="button" mat-button matStepperPrevious>Previous</button>
+                <button type="button" mat-button matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step>
+
+    <!-- <mat-step label="Done">
         <ng-template matStepLabel="Done">Done</ng-template>
-        <p>This is final step</p>
-        <button mat-button matStepperPrevious>Previous</button>
+        <p>HPara finalizar, nos encantaría saber el por qué su donación :)</p>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="N° de telefono o celular" formControlName="detalles" required>
+        </mat-form-field>
+        <button mat-button type="submit">Enviar</button>
+    </mat-step> -->
+
+    <mat-step [stepControl]="detallesFormGroup">
+        <form [formGroup]="detallesFormGroup">
+            <ng-template matStepLabel="detalles">Detalles</ng-template>
+            <p>Para finalizar, nos encantaría saber el por qué su donación :)</p>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Detalles" formControlName="detalles" required>
+            </mat-form-field>
+            <button mat-button type="submit">Enviar</button>
+            
+        </form>
     </mat-step>
 </mat-vertical-stepper>
