@@ -31,9 +31,9 @@
                         <h2>Noticias</h2>
                         <div class="separator separator-danger">∎</div>
                     <div class="news-search">
-                        <input type="search" id="search-input" class="search-input" placeholder="Ingrese una búsqueda..." aria-label="Search"
+                        <input type="text" class="form-control search-input" placeholder="Ingrese una búsqueda..." [(ngModel)]="titulo" aria-label="Search"
                             aria-describedby="search-addon" />
-                        <button id="search-button">Buscar</button>
+                        <button id="search-button" (click)='buscarTitulo()'>Buscar</button>
                     </div>
                     <div id="news-container" class="row row-cols-1 row-cols-md-3 g-4 mx-2 my-2">
                         <div class="col" *ngFor="let noticia of noticias">

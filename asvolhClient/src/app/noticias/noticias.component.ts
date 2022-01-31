@@ -24,11 +24,24 @@ export class NoticiasComponent implements OnInit {
   constructor(private noticiasService: NoticiasService) { }
 
   ngOnInit(): void {
-    this.retrieveTutorials();
+    this.mostrarNoticias();
   }
 
-  retrieveTutorials(): void {
+  mostrarNoticias(): void {
     this.noticiasService.getAll()
+      .subscribe({
+        next: (data) => {
+          this.noticias = data;
+        },
+        error: (e) => console.error(e)
+    });
+  }
+
+  buscarTitulo(): void {
+    this.noticiaActual = {};
+    this.indxActual = -1;
+
+    this.noticiasService.findByTitle(this.titulo)
       .subscribe({
         next: (data) => {
           this.noticias = data;
