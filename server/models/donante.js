@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     fecha_nacimiento: DataTypes.DATE,
     direccion: DataTypes.STRING,
     tipo_donante: DataTypes.INTEGER,
-    contacto: DataTypes.INTEGER
+    contacto: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'donante',

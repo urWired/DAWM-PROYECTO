@@ -15,9 +15,11 @@ module.exports = {
     for (let i = 0; i <10; i++) {
       await queryInterface.bulkInsert('Voluntarios', [{
           cedula: generarCedula(),
-          referencia: "Conocido",
           nombres: 'Nombre '+i,
           apellidos: 'Apellido'+i,
+          correo: 'random@email.com',
+          celular: generarCedula(),
+          direccion: "Guayaquil, Ecuador",
           tipo_usuario: 3,
           id_voluntariado: 1,
           fecha_nacimiento: new Date(),
