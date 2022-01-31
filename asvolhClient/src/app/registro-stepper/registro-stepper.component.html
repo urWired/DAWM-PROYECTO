@@ -17,17 +17,32 @@
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
               </mat-form-field>
+            <div>
+                <button type="button" mat-button matStepperNext>Siguiente</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="contactoFormGroup">
+        <form [formGroup]="contactoFormGroup">
+            <ng-template matStepLabel="DatosContacto">Datos de contacto</ng-template>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Correo personal" formControlName="correo" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Celular" formControlName="celular" required>
+            </mat-form-field>
             <mat-form-field appearance="fill">
                 <input matInput placeholder="Dirección" formControlName="direccion" required>
             </mat-form-field>
             <div>
+                <button type="button" mat-button matStepperPrevious>Anterior</button>
                 <button type="button" mat-button matStepperNext>Siguiente</button>
             </div>
         </form>
     </mat-step>
     <mat-step [stepControl]="ingresoFormGroup">
         <form [formGroup]="ingresoFormGroup">
-            <ng-template matStepLabel="Address">Contacto</ng-template>
+            <ng-template matStepLabel="Ingreso">Ingreso</ng-template>
             <mat-form-field appearance="fill">
                 <mat-label>Voluntariado</mat-label>
                 <mat-select [(ngModel)]="selectedValue" formControlName="voluntariado">

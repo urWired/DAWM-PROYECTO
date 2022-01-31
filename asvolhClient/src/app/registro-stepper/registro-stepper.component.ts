@@ -18,6 +18,8 @@ export class RegistroStepperComponent implements OnInit {
   voluntariados: Voluntariado[];
   datosPersonalesFormGroup: FormGroup;
   ingresoFormGroup: FormGroup;
+  contactoFormGroup: FormGroup;
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -30,7 +32,11 @@ export class RegistroStepperComponent implements OnInit {
       cedula: ["", Validators.required],
       nombres: ["", Validators.required],
       apellidos: ["", Validators.required],
-      fechaNacimiento: ["", Validators.required],
+      fechaNacimiento: ["", Validators.required]
+    });
+    this.contactoFormGroup = this.fb.group({
+      celular: ["", Validators.required],
+      correo: ["", Validators.required],
       direccion: ["", Validators.required]
     });
     this.ingresoFormGroup = this.fb.group({
