@@ -12,8 +12,8 @@ module.exports = {
         type: Sequelize.DOUBLE,
         allowNull: false
       },
-      donante: {
-        type: Sequelize.INTEGER,
+      id_donante: {
+        type: Sequelize.STRING,
         allowNull: false,
         references: {
           model: 'donantes',

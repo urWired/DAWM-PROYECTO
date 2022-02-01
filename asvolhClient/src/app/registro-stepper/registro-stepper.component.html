@@ -1,0 +1,68 @@
+<mat-vertical-stepper>
+    <mat-step [stepControl]="datosPersonalesFormGroup">
+        <form [formGroup]="datosPersonalesFormGroup" (ngSubmit)="form_datos()" #formpersonal="ngForm">
+            <ng-template matStepLabel="DatosPersonales">Datos Personales</ng-template>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Cédula" formControlName="cedula" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Nombres" formControlName="nombres" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Apellidos" formControlName="apellidos" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Fecha de Nacimiento</mat-label>
+                <input placeholder="dd/mm/yyyy" matInput [matDatepicker]="picker" formControlName="fechaNacimiento">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            <div>
+                <button type="button" mat-button matStepperNext>Siguiente</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="contactoFormGroup">
+        <form [formGroup]="contactoFormGroup" (ngSubmit)="form_contacto()" #formcontacto="ngForm">
+            <ng-template matStepLabel="DatosContacto">Datos de contacto</ng-template>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Correo personal" formControlName="correo" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Celular" formControlName="celular" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Dirección" formControlName="direccion" required>
+            </mat-form-field>
+            <div>
+                <button type="button" mat-button matStepperPrevious>Anterior</button>
+                <button type="button" mat-button matStepperNext>Siguiente</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="ingresoFormGroup">
+        <form [formGroup]="ingresoFormGroup" (ngSubmit)="form_voluntariado()" #formvoluntariado="ngForm">
+            <ng-template matStepLabel="Ingreso">Ingreso</ng-template>
+            <mat-form-field appearance="fill">
+                <mat-label>Voluntariado</mat-label>
+                <mat-select [(ngModel)]="selectedValue" formControlName="voluntariado">
+                  <mat-option *ngFor="let voluntariado of voluntariados" [value]="voluntariado.value">
+                    {{voluntariado.viewValue}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <textarea matInput placeholder="Motivo de ingreso" formControlName="motivo"></textarea>
+            </mat-form-field>
+            <div>
+                <button type="button" mat-button matStepperPrevious>Anterior</button>
+                <button type="button" mat-button matStepperNext>Siguiente</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step label="Done">
+        <ng-template matStepLabel="Done">Envío de datos</ng-template>
+        <p>Haz click en el botón para finalizar el proceso de registro</p>
+        <button mat-button type="submit" (click)="formpersonal.ngSubmit.emit();formcontacto.ngSubmit.emit();formvoluntariado.ngSubmit.emit()">Enviar</button>
+    </mat-step>
+</mat-vertical-stepper>

@@ -1,0 +1,27 @@
+body {
+    font-family: "Cambo", "Times New Roman", serif;
+}
+h2 {
+    font-size: 40px;
+}
+.title-area > h2 {
+    font-size: 30px;
+    color: white;
+}
+.title-area > h4 {
+    font-size: 18px;
+    color: white;
+}
+h3 {
+    color: black;
+}
+.title-area > h5 {
+    font-size: 18px;
+    color: white;
+}
+.programas > h2, .programas > h5 {
+    color:black
+}
+.formulario:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}

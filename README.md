@@ -26,6 +26,13 @@ Para configurar la base de datos relacional:
 sequelize init
 ```
 Cambie las credenciales de config.json por las de su motor de MySQL Workbench.<br>
+Ejecute los siguientes comandos para inicializar la db:
+```
+sequelize db:create           Crea la db
+sequelize db:migrate          Ejecuta las migraciones y crea las tablas
+sequelize db:seed:all         Crea datos aleatorios
+```
+Luego ejecute query_inserts.sql en Workbench para llenar otras tablas.<br>
 Ejecute el siguiente comando:
 ```
 npm install --save cors

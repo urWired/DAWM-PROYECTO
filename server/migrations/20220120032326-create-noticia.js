@@ -21,11 +21,11 @@ module.exports = {
         allowNull: false
       },
       id_creador: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
         references: {
           model: 'administradores',
-          key: 'id'
+          key: 'usuario'
         }
       }
     });

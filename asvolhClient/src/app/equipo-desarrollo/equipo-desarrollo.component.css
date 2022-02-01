@@ -1,0 +1,16 @@
+.title-area > h2 {
+    font-size: 30px;
+    color: white;
+}
+h4 {
+    font-size: 15px;
+    color: white;
+}
+ul > li {
+    margin: 40px;
+    align-items: center;
+}
+ul {
+    display: flex;
+    justify-content: center;
+}

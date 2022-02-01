@@ -882,9 +882,6 @@ p > input, p > #inputState {
   border-radius: 5px;
   margin-top: 5px;
 }
-#container-contacto {
-  text-align: left;
-}
 input.invalid, select.invalid {
   background-color: #ffdddd;
 }
@@ -1027,36 +1024,7 @@ p > input::placeholder, p > #inputState, p > #form_fecha::placeholder{
 .section {
   position: relative;
 }
-.contacto h5{
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-.step.active {
-  opacity: 1
-}
-.step.finish {
-  background-color: #4CAF50
-}
-form label {
-  font-family: "Cambo", "Times New Roman", serif;
-  font-size: 18px;
-}
-.all-steps {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px
-}
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #eeeeee;
-  border: none;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5
-}
+
 .section .title-area {
   max-width: 760px;
   margin: 10px auto 35px;
@@ -1215,7 +1183,6 @@ div .card-body{
 .filter {
   position: relative;
   height: 100%;
-  color: #FFFFFF;
 }
 .filter:before {
   position: absolute;
@@ -2134,7 +2101,7 @@ div .card-body{
   vertical-align: center;
   line-height: 1.7;
   position: relative;
-  top: 73vh;
+  top: 70vh;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2620,7 +2587,6 @@ div .card-body{
   z-index: 100;
   display: block;
   margin-top: 30vh;
-  text-align: center;
 }
 .section-get-started .title-header,
 .section-header-freebie .title-header,
@@ -2632,6 +2598,9 @@ footer .info {
   padding: 10px;
 }
 .footer-big nav > ul li {
+  text-align: center;
+}
+.button-get-started {
   text-align: center;
 }
 .section-get-started .button-contact,
@@ -2733,7 +2702,7 @@ footer .info {
 .search-input{
   display: inline-block;
   border-radius: 10px;
-  width: 100%;
+  width: 500px;
   height: 35px;
   border: none;
   color: #000000;
@@ -2746,6 +2715,14 @@ footer .info {
   background-color: #FFFFFF;
 }
 #registro:hover{
+  background-color: #a786df;
+  color: #FFFFFF;
+}
+
+#donacion{
+  background-color: #FFFFFF;
+}
+#donacion:hover{
   background-color: #a786df;
   color: #FFFFFF;
 }
@@ -2770,10 +2747,6 @@ footer .info {
 .section-our-team-freebie .container {
   margin-top: 14vh;
   margin-bottom: 50px;
-}
-
-.card p {
-  min-height: 0;
 }
 
 .section-our-clients-freebie .list-logos img {

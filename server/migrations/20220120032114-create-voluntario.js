@@ -1,14 +1,12 @@
 'use strict';
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('voluntarios', {
       cedula: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
         primaryKey: true
-      },
-      referencia: {
-        type: Sequelize.STRING
       },
       nombres: {
         type: Sequelize.STRING,
@@ -17,6 +15,15 @@ module.exports = {
       apellidos: {
         type: Sequelize.STRING,
         allowNull: false
+      },
+      correo: {
+        type: Sequelize.STRING
+      },
+      celular: {
+        type: Sequelize.STRING
+      },
+      direccion: {
+        type: Sequelize.STRING
       },
       tipo_usuario: {
         type: Sequelize.INTEGER,
