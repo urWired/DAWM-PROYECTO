@@ -2,7 +2,7 @@
 
 Proyecto perteneciente a la materia Desarrollo de Aplicaciones Web y Móviles (2021-2S)
 
-# Instalación y configuración del servidor
+## Instalación y configuración del servidor
 Los siguientes comandos deben ser ejecutados desde el directorio server para su correcta instalación:
 ```
 npm install -g sequelize-cli
@@ -30,9 +30,12 @@ Ejecute los siguientes comandos para inicializar la db:
 ```
 sequelize db:create           Crea la db
 sequelize db:migrate          Ejecuta las migraciones y crea las tablas
-sequelize db:seed:all         Crea datos aleatorios
 ```
 Luego ejecute query_inserts.sql en Workbench para llenar otras tablas.<br>
+Para generar datos aleatorios provisionales en la db, ejecute los seeders:
+```
+sequelize db:seed:all
+```
 Ejecute el siguiente comando:
 ```
 npm install --save cors
@@ -49,5 +52,18 @@ app.use(cors());
 
 <br>
 
-# Instalación y configuración del cliente
+## Instalación y configuración del cliente
 Los siguientes comandos deben ser ejecutados desde el directorio cliente para su correcta instalación:
+```npm install
+npm install -g @angular/cli   ->   Para instalar el CLI dde Angular
+```
+Ejecute **ng serve -o** para comprobar que la instalación se realizó correctamente.<br>
+Luego, instale Angular Material con el siguiente comando:
+```
+ng add @angular/material 
+```
+Acepte todas las configuraciones por defecto. Finalmente, agregue dos dependencias más con los comandos:
+```
+npm i @angular/cdk --save 
+npm i @schematics/angular
+```
