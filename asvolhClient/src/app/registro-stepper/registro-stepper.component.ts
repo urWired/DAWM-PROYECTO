@@ -42,8 +42,7 @@ export class RegistroStepperComponent implements OnInit {
     this.voluntariados = [
       {value: 1, viewValue: 'Plan Canguro'},
       {value: 2, viewValue: 'Taller de Mallas'},
-      {value: 3
-        , viewValue: 'Bazar'},
+      {value: 3, viewValue: 'Bazar'},
     ];
     this.datosPersonalesFormGroup = this.fb.group({
       cedula: ["", Validators.required],
@@ -70,13 +69,12 @@ export class RegistroStepperComponent implements OnInit {
       correo: this.voluntario.correo,
       celular: this.voluntario.celular,
       direccion: this.voluntario.direccion,
-      tipo_usuario: 2,
+      tipo_usuario: 3,
       voluntariado: this.voluntario.voluntariado,
       fecha_nacimiento: this.voluntario.fecha_nacimiento,
       fecha_ingreso: new Date(),
       motivo_ingreso: this.voluntario.motivo_ingreso,
     }
-    console.log(data);
     this.voluntariosService.create(data)
     .subscribe({
       next: (res) => {

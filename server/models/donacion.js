@@ -10,18 +10,18 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      this.belongsTo(models.donante, {
-        foreignKey: "donante",
-        as: "id_donante"
-      });
+      this.belongsTo(models.donante);
     }
   };
   donacion.init({
     monto: DataTypes.DOUBLE,
-    donante: DataTypes.INTEGER,
+    donante: DataTypes.STRING,
     detalles: DataTypes.STRING
   }, {
     sequelize,
+    timestamps: false,
+    createdAt: false,
+    updatedAt: false,
     modelName: 'donacion',
     tableName: 'donaciones'
   });

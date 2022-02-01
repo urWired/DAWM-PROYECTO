@@ -1,9 +1,38 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Donaciones } from '../models/donaciones.model';
+
+const baseUrl = "http://localhost:3001/donaciones"
 
 @Injectable({
   providedIn: 'root'
 })
 export class DonacionesService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getAll(): Observable<Donaciones[]> {
+    return this.http.get<Donaciones[]>(baseUrl);
+  }
+
+  get(id: any): Observable<Donaciones> {
+    return this.http.get(`${baseUrl}/${id}`);
+  }
+
+  create(data: any): Observable<any> {
+    return this.http.post(baseUrl, data);
+  }
+
+  update(id: any, data: any): Observable<any> {
+    return this.http.put(`${baseUrl}/${id}`, data);
+  }
+
+  delete(id: any): Observable<any> {
+    return this.http.delete(`${baseUrl}/${id}`);
+  }
+
+  deleteAll(): Observable<any> {
+    return this.http.delete(baseUrl);
+  }
 }

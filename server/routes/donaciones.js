@@ -4,6 +4,30 @@ var router = express.Router();
 const Sequelize = require('sequelize');
 const Donacion = require('../models').donacion;
 
+/* CREATE */
+router.post('/', (req, res, next) => {
+    if (!req.body) {
+        res.status(400).send({message: "Contenido vacío!"});
+        return;
+    }
+
+    const donacion = {
+        cedula: req.body.cedula,
+        monto: req.body.monto,
+        detalles: req.body.detalles
+    };
+
+    Donacion.create(donacion, {
+        attributes: { exclude: ["createdAt", "updatedAt"] }
+    })
+    .then(data => {
+        res.send(data);
+    })
+    .catch(err => {
+        res.status(500).send({message: err.message || "Error al crear nuevo voluntario"});
+    });
+});
+
 /* GET ALL */
 router.get('/', (req, res, next) => {
     Donacion.findAll({ 

@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
+      this.belongsTo(models.tipoDonante);
       this.hasMany(models.donacion);
-      this.belongsTo(models.tipoDonante)
     }
   };
   donante.init({
@@ -26,8 +26,14 @@ module.exports = (sequelize, DataTypes) => {
     contacto: DataTypes.STRING
   }, {
     sequelize,
+    timestamps: false,
+    createdAt: false,
+    updatedAt: false,
+    tipoUsuarioId: false,
+    tipoDonanteId: false,
     modelName: 'donante',
     tableName: 'donantes'
   });
+  donante.removeAttribute("id");
   return donante;
 };

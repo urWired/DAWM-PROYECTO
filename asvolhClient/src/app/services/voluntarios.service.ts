@@ -35,8 +35,4 @@ export class VoluntariosService {
   deleteAll(): Observable<any> {
     return this.http.delete(baseUrl);
   }
-
-  findByTitle(title: any): Observable<Voluntarios[]> {
-    return this.http.get<Voluntarios[]>(`${baseUrl}?title=${title}`);
-  }
 }

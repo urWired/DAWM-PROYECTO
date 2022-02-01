@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.DOUBLE,
         allowNull: false
       },
-      id_donante: {
+      donante: {
         type: Sequelize.STRING,
         allowNull: false,
         references: {
