@@ -28,8 +28,12 @@ module.exports = (sequelize, DataTypes) => {
     motivo_ingreso: DataTypes.STRING
   }, {
     sequelize,
+    timestamps: false,
+    createdAt: false,
+    updatedAt: false,
     modelName: 'voluntario',
-    tableName: 'voluntarios'
+    tableName: 'voluntarios',
   });
+  voluntario.removeAttribute("id");
   return voluntario;
 };

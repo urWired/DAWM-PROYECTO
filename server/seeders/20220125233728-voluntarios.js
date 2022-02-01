@@ -24,7 +24,7 @@ module.exports = {
           id_voluntariado: 1,
           fecha_nacimiento: new Date(),
           fecha_ingreso: new Date(),
-          motivo_ingreso: "Colaboración" 
+          motivo_ingreso: "Colaboración"
       }], {});
     }
   },
