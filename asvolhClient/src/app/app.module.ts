@@ -25,6 +25,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
+import { MatCardModule} from '@angular/material/card';
 import { DonacionStepperComponent } from './donacion-stepper/donacion-stepper.component';
 import { RegistroStepperComponent } from './registro-stepper/registro-stepper.component';
 
@@ -60,7 +61,8 @@ import {authInterceptorProviders} from './_helpers/auth.interceptor';
     MatNativeDateModule,
     MatSelectModule,
     MatOptionModule,
-    HttpClientModule
+    MatCardModule,
+    HttpClientModule,   
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
