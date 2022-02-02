@@ -11,7 +11,6 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       this.belongsTo(models.tipoDonante);
-      this.hasMany(models.donacion);
     }
   };
   donante.init({
@@ -34,5 +33,6 @@ module.exports = (sequelize, DataTypes) => {
     modelName: 'donante',
     tableName: 'donantes'
   });
+  donante.removeAttribute("id");
   return donante;
 };

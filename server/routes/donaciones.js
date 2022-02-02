@@ -10,9 +10,8 @@ router.post('/', (req, res, next) => {
         res.status(400).send({message: "Contenido vacío!"});
         return;
     }
-
     const donacion = {
-        cedula: req.body.cedula,
+        donante: req.body.cedula,
         monto: req.body.monto,
         detalles: req.body.detalles
     };
@@ -24,7 +23,7 @@ router.post('/', (req, res, next) => {
         res.send(data);
     })
     .catch(err => {
-        res.status(500).send({message: err.message || "Error al crear nuevo voluntario"});
+        res.status(500).send({message: err.message || "Error al registrar donación"});
     });
 });
 

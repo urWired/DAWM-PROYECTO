@@ -85,7 +85,7 @@ export class DonacionStepperComponent implements OnInit {
     });
   }
 
-  crearDonante(){
+  crearDonacion(){
     const data = {
       cedula: this.donante.cedula,
       nombres: this.donante.nombres,
@@ -96,8 +96,10 @@ export class DonacionStepperComponent implements OnInit {
       tipo_usuario: 2,
       tipo_donante: this.donante.tipo_donante,
       fecha_nacimiento: this.donante.fecha_nacimiento,
+      monto: this.donacion.monto,
+      detalles: this.donacion.detalles,
     }
-    console.log(data);
+
     this.donantesService.create(data)
     .subscribe({
       next: (res) => {
@@ -105,21 +107,13 @@ export class DonacionStepperComponent implements OnInit {
       },
       error: (e) => console.error(e)
     })
-  }
 
-  crearDonacion(){
-    const data = {
-      id_donante: this.donante.cedula,
-      monto: this.donacion.monto,
-      detalles: this.donacion.detalles,
-    }
-    console.log(data);
     this.donacionesService.create(data)
     .subscribe({
       next: (res) => {
         console.log(res);
       },
-      error: (e) => console.error(e)
+      error: (e) => console.log(e)
     })
   }
 }

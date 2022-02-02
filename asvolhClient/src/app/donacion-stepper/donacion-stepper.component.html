@@ -7,7 +7,7 @@
             </mat-form-field><br>
             <mat-form-field appearance="fill">
                 <mat-label>Tipo de donante</mat-label>
-                <mat-select [(ngModel)]="selectedValue" [(ngModel)]="donante.tipo_donante" formControlName="tipo_donante">
+                <mat-select [(ngModel)]="donante.tipo_donante" formControlName="tipo_donante">
                   <mat-option *ngFor="let tipodonante of tipo_donante" [value]="tipodonante.value">
                     {{tipodonante.viewValue}}
                   </mat-option>
@@ -79,7 +79,7 @@
             <mat-form-field appearance="fill">
                 <input matInput placeholder="Detalles" [(ngModel)]="donacion.detalles" formControlName="detalles" required>
             </mat-form-field>
-            <button mat-button type="submit" (click)="crearDonante();crearDonacion()">Enviar</button>
+            <button mat-button type="submit" (click)="crearDonacion()">Enviar</button>
         </form>
     </mat-step>
 </mat-vertical-stepper>
