@@ -3,13 +3,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
-const db = require('./models')
 
 var adminRouter = require('./routes/administradores');
 var noticiasRouter = require('./routes/noticias');
 var voluntariosRouter = require('./routes/voluntarios');
 var donantesRouter = require('./routes/donantes');
 var donacionesRouter = require('./routes/donaciones');
+var correoRouter = require('./routes/correo');
 
 var app = express();
 
@@ -25,5 +25,6 @@ app.use('/noticias', noticiasRouter);
 app.use('/voluntarios', voluntariosRouter);
 app.use('/donantes', donantesRouter);
 app.use('/donaciones', donacionesRouter);
+app.use('/sendmail', correoRouter);
 
 module.exports = app;

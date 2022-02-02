@@ -1,0 +1,21 @@
+<form (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <label class="label">
+        Nombre:
+    </label>
+    <div class="field">
+        <input type="text" name="nombre" placeholder="Ingrese su nombre" class="input" [(ngModel)]="contacto.nombre">
+    </div>
+    <label class="label">
+        Correo:
+    </label>
+    <div class="field">
+        <input type="text" name="correo" placeholder="Ingrese su correo" class="input" [(ngModel)]="contacto.correo">
+    </div>
+    <label class="label">
+        Mensaje:
+    </label>
+    <div class="field">
+        <textarea type="text" name="mensaje" placeholder="Escriba su mensaje" class="textarea" [(ngModel)]="contacto.mensaje"></textarea>
+    </div>
+    <button type="submit" class="button">Enviar</button>
+</form>

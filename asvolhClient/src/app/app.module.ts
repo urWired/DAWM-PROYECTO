@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,8 +28,8 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatCardModule} from '@angular/material/card';
 import { DonacionStepperComponent } from './donacion-stepper/donacion-stepper.component';
 import { RegistroStepperComponent } from './registro-stepper/registro-stepper.component';
-
-import {authInterceptorProviders} from './_helpers/auth.interceptor';
+import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,8 @@ import {authInterceptorProviders} from './_helpers/auth.interceptor';
     NavbarComponent,
     DonacionComponent,
     DonacionStepperComponent,
-    RegistroStepperComponent
+    RegistroStepperComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
